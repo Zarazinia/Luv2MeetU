@@ -1,14 +1,9 @@
 var quotes = [
  
-
+    'What superpower do you wish you could have?',
+    'What makes you smile?',
     'What do you think about cheese?',
-    'Do you enjoy cooking? What do like to cook?',
-    'Do you like going to new places?',
-    'Where are your favourite places to visit?',
-    'Would you try new foods?',
-    'Would you try new places?',
-    'Would you try new hobbies?',
-    'Are you interested in politics?'
+    'What do you think about politics?'
 
 ]
 
