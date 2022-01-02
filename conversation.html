@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luv 2 meet U - Would you rather?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="l2mu-style.css">
+</head>
+<body onload="newQuote()">
+
+
+<div class="container">
+  
+  <div class="Header">
+  <span id="logo"><a href="index.html"><img src="Luv2meetU-logo-300x286.png" width="175px" ></a></span>
+  </div>
+  
+  <div class="Nav">
+
+<button class="accordion"><a href="index.html">Home</a></button>
+
+<button class="accordion">Questions</button>
+<div class="panel">
+   <ul><li><a href="dating.html">Dating</a></li>
+   <li><a href="conversation.html">Conversation</a></li>
+   <li><a href="would-you-rather.html">Would you rather</a></li></ul>
+</div>
+<button class="accordion"><a href="tips.html">Top tips</a></button>
+
+<button class="accordion"><a href="useful.html">Useful numbers</a></button>
+
+
+  </div>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+  
+  <div class="Main">
+  <h1>Dating questions</h1>
+<p><i id = "quotes">What?</i> 
+	<button class="button button1" onclick="newQuote()">Next question</button> </p>
+	  
+	 
+  </div>
+  <div class="Footer"><p>&copy;7HD 2021</p></div>
+</div>
+<script src="conversation.js"></script>
+</body>
+</html>
