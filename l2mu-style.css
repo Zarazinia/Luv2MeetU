@@ -37,7 +37,7 @@
 .Main { grid-area: Main; }
 
 h1{font-size:25px; padding:10px;}
-h2{font-size:20px; padding:10px; border: 1px solid red;}
+h2{font-size:15px; padding:10px;}
 h3{font-size:15px;}
 h7{font-size:12px; padding:10px;}
 p {font-size:14px; padding:10px;}
