@@ -25,14 +25,14 @@
   padding: 30px;
   text-align: center;
   font-size: 35px;
-	height: 300px;
+	
 }
 
 .Nav { grid-area: Nav;   background-color: #aaa;
   padding: 0px;
   text-align: center;
   font-size: 12px;
-height: auto;}
+}
 
 .Main { grid-area: Main; }
 
