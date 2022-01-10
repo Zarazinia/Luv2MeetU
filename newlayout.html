@@ -1,0 +1,219 @@
+<html>
+  <head>
+  <style>
+    *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #fff;
+  color: #444;
+}
+
+h1, p {
+  margin: 0 0 1em 0;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 20px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+  /* no grid support? */
+  .sidebar {
+    float: left;
+    width: 19.1489%;
+  }
+
+  .content {
+    float: right;
+    width: 79.7872%;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+  }
+  
+  .header, .footer {
+    grid-column: 1 / -1;
+    /* needed for the floated layout */
+    clear: both;
+  }
+
+}
+
+.wrapper > * {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+    
+    
+*{ 
+  box-sizing:border-box;
+  font-family:"Dosis", sans-serif; 
+}
+
+.main-navigation{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  margin:2em;
+}
+
+ul{
+  margin:0; //reset
+  padding:0;
+}
+
+.menu{
+  display:flex;  
+  flex-direction:column;
+  
+  li{
+    display:block;
+    list-style-type:none;
+    text-transform:uppercase;
+  }
+  
+  li a{
+    display:flex;
+    text-align:center;
+    text-decoration:none;
+    color:#777;
+    padding:1rem;
+  }
+  
+  li a:hover{
+    background:#777;
+    color:#fff;
+  }
+} 
+
+@media (min-width: 800px) {
+    .menu{
+      flex-direction:row;
+      justify-content:space-between;
+    }
+}
+
+.menu-item-has-children > a:after{
+  font-family:'Genericons';
+  content: '\f431';
+  padding:1px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+@media (min-width: 800px) {
+  nav ul ul {
+    display: none;
+    position:absolute;
+  }
+}
+
+nav ul li:hover > ul {
+  display:block;
+  color:#fff;
+  padding-left:2rem;
+}
+
+@media (min-width: 800px) {
+  nav ul li:hover > ul {
+    padding-left:0;
+    background:#777;
+  }
+  
+  nav ul li:hover > ul a{
+    color:#fff;
+  }
+  
+  .sub-menu{
+    li{
+      display:flex;
+      padding-right:2em;
+    }
+    
+    li:hover, li a:hover{
+      background:#ddd;
+      color:#777;
+    }
+  }
+  
+  nav ul ul ul{
+    margin:0 0 0 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .menu-item-has-children .menu-item-has-children > a:after{
+    font-family:'Genericons';
+    content: '\f431';
+    padding:1px;
+    transform: rotate(-90deg);
+  }
+  
+}
+
+
+
+  </style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+  <header class="header">My header</header>
+  <aside class="sidebar">
+<nav class="main-navigation">
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="menu-item-has-children"><a href="#">Services</a>
+      <ul class="sub-menu">
+        <li><a href="#">Plumbing</a></li>
+        <li class="menu-item-has-children"><a href="#">Heating</a>
+          <ul class="sub-menu">
+            <li><a href="#">Residential</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Industrial</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Electrical</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+      </aside>
+      
+      
+  <article class="content">
+    <h1>2 column, header and footer</h1>
+    <p>This example uses line-based positioning, to position the header and footer, stretching them across the grid.</p>
+   
+    
+  </article>
+  <footer class="footer">My footer</footer>
+</div>
+  </body>
+</html>
