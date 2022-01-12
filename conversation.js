@@ -1,6 +1,7 @@
 var quotes = [
  
-
+    'If you could fly a plane, where would you go?',
+    'If you could choose to be any animal, what would it be and why?',
     'How do you like to decorate your house, pictures, cushions, posters, bright colours or plain colours?',
     'What do you think about green issues, do you like to recycle or grow your own vegetables?',
     'What is your favourite film and why do you like it?',
