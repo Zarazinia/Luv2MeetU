@@ -1,5 +1,8 @@
 var quotes = [           
  
+    'How many brothers and sisters do you have?',
+    'If you cooked me a three course meal what would it be?',
+    'What is your least favourite food?',
     'What/’s your favourite thing to do at the weekend?',
     'Do you like being out with a group of people or do you prefer just one or two people at a time?',
     'What are the three most important things that make you happy?',
